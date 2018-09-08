@@ -1,0 +1,32 @@
+:root {
+    --box-gutter: 10px;
+    --box-size: 150px;
+  }
+
+  .loader {
+    width: calc(var(--box-size)*2 + var(--box-gutter)*2);
+    height: calc(var(--box-size)*2 + var(--box-gutter)*2);
+    transform: rotate(45deg);
+    margin: 100px auto;
+    display: flex;
+    background-color: aqua;
+  }
+  
+  .box {
+    
+    width: var(--box-size);
+    height: var(--box-size);
+    background-color: aliceblue;
+  }
+  #box1 {
+    margin: 0 var(--box-gutter) var(--box-gutter) 0;
+  }
+  #box2 {
+    margin: 0 0 var(--box-gutter) var(--box-gutter);
+  }
+  #box3 {
+    margin: var(--box-gutter) 0 0 var(--box-gutter);
+  }
+  #box4 {
+    margin: var(--box-gutter) var(--box-gutter) 0 0;
+  }
